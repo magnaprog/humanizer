@@ -7,7 +7,7 @@ description: |
   voice, filler, or chatbot artifacts. Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
-  version: "2.11.2"
+  version: "3.0.0"
 ---
 
 # Humanizer: remove AI writing patterns
@@ -39,11 +39,19 @@ A writing sample takes priority over these style rules. If the sample uses em da
 
 ## Add personality only when it fits
 
-Removing AI patterns is only half the job. The result should still sound like a person.
+Removing AI patterns is only half the job. Sterile, voiceless writing is just as obvious as slop. The result should still sound like a person.
 
 Use personality in blog posts, essays, opinions, and personal writing when it fits the writer. Keep reference, technical, legal, and factual text neutral. Do not add opinions or first-person language where they do not belong.
 
-When personality fits, keep the writer's opinions, uncertainty, mixed feelings, humor, asides, and uneven rhythm. Never invent facts to make the text feel personal.
+Signs the rewrite is clean but soulless:
+
+- Every sentence is the same length and structure
+- No opinions, just neutral reporting
+- No acknowledgment of uncertainty or mixed feelings
+- No first-person perspective when the genre calls for one
+- Reads like a press release
+
+When personality fits, keep the writer's opinions, uncertainty, mixed feelings, humor, asides, and uneven rhythm. Never invent facts to make the text feel personal. For voice techniques and worked before/after examples, see [references/voice-examples.md](references/voice-examples.md).
 
 ## Content patterns
 
