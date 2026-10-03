@@ -1,0 +1,171 @@
+{
+  "checked_utc": "2026-10-03T17:52:56.149273+00:00",
+  "method": "Separate Codex CLI invocation supplied the complete candidate text and passages, without expected answers; parent manually reviewed the outputs.",
+  "cli_version": "0.159.3",
+  "configured_model": "gpt-6-astra",
+  "configured_reasoning_effort": "medium",
+  "limits": "Three small diagnostic batches. No benchmark accuracy claim or live Claude/free-code rewrite evaluation. First file-based attempt failed nested sandbox setup; subsequent evaluations used inline text without tool access.",
+  "initial": {
+    "prompt_sha256": "e984b3b36ec5c657e4da47a56b2c4a71e75f7c70361ec33ae816aceefa0506d2",
+    "output_sha256": "0fd89781bebed0b509574dc995578a603d0f5e712a09aeb6292f4a083c59486f",
+    "cases": [
+      {
+        "case": 1,
+        "rewrite": "The merger is associated with lower costs and higher retention. Analysts cite benefits associated with the merger.",
+        "issue_notes": "The analysts and their evidence are not identified. The associations do not establish causation.",
+        "input": "Scientific prose: The merger is associated with lower costs. Furthermore, it is associated with higher retention. Analysts cite benefits in connection with the merger.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 2,
+        "rewrite": "At matched observation variance, the three 2018 records favor the skip, while four earlier records have mixed results. PPCA has a lower energy score in every case. The records are temporally dependent.",
+        "issue_notes": "The excerpt does not define PPCA or the skip. Temporal dependence and the matched observation variance condition are preserved.",
+        "input": "Scientific prose: At matched observation variance, the three 2018 records favor the skip. Four earlier records have mixed results. PPCA has a lower energy score in every case. The records are temporally dependent.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 3,
+        "rewrite": "Gallery 825 is LAAA's exhibition space. It has four separate spaces and covers more than 3,000 square feet.",
+        "issue_notes": "",
+        "input": "Technical prose: Gallery 825 serves as LAAA's exhibition space. It features four separate spaces and boasts over 3,000 square feet.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 4,
+        "rewrite": "The solver was trained on eleven years of data (excluding 2009 because measurements were missing) and evaluated on a held-out test era. The reported interval is the full range across three seeds, not a population confidence interval.",
+        "issue_notes": "",
+        "input": "Technical prose: The solver was trained on eleven years of data (excluding 2009 because measurements were missing). It was evaluated on a held-out test era. The reported interval is the full range across three seeds, not a population confidence interval.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 5,
+        "rewrite": "Run `git checkout -- .` only for the authorized paths. Define $b=1-\\alpha$ and retain \\citep{Doe2025}. The observed means are fitted values, not prior samples.",
+        "issue_notes": "The command uses `.` rather than specifying authorized paths, so its scope may conflict with the instruction. Code and mathematical notation are preserved unchanged.",
+        "input": "Markdown with code and math: Run `git checkout -- .` only for the authorized paths. Define $b=1-\\alpha$ and retain \\citep{Doe2025}. The observed means are fitted values, not prior samples.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 6,
+        "rewrite": "The agents generated 3 million lines of code. Some developers were impressed, while others were skeptical. I was curious but unsure what this showed.",
+        "issue_notes": "",
+        "input": "Personal essay: The agents generated 3 million lines of code. Some developers were impressed while others were skeptical. I was curious but unsure what this showed.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 7,
+        "rewrite": "This function replaced an O(n²) iteration over all items. The source gives no details of its current implementation.",
+        "issue_notes": "",
+        "input": "API documentation: This function was added to replace an O(n²) iteration over all items. The source gives no details of its current implementation.",
+        "manual_result": "fail",
+        "review": "Changed intended purpose into completed replacement."
+      },
+      {
+        "case": 8,
+        "rewrite": "The options come from the selected item without guessing.",
+        "issue_notes": "The excerpt does not explain what guessing would involve or who would do it; the exclusion is preserved without adding a mechanism.",
+        "input": "Technical documentation: The options come from the selected item, no guessing.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 9,
+        "rewrite": "The lower reconstruction error does not establish an improvement in generation. The two training runs use different observation variances.",
+        "issue_notes": "Removed the generic importance statement; preserved the limit on the conclusion and the difference between the training conditions.",
+        "input": "Standalone paper: This shows the importance of the result. The lower reconstruction error does not establish an improvement in generation. The two training runs use different observation variances.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      },
+      {
+        "case": 10,
+        "rewrite": "We should fix the import before releasing. I also checked the export; it retains empty rows.",
+        "issue_notes": "",
+        "input": "Actual reply; reader already stated the import drops empty rows: As you described, the import drops empty rows. We should fix that before releasing. I also checked the export and it retains them.",
+        "manual_result": "pass",
+        "review": "Material facts, distinctions, and relevant context preserved in this exercise."
+      }
+    ]
+  },
+  "followup": {
+    "prompt_sha256": "eb95e812843d9a68750fe06679fc90ef38e1e9d22203032c13fe7d239d22dc20",
+    "output_sha256": "01fa056d0b1b05391e3adaa5cc9a84944d20b07cfd176ce18bc97b51a8705a73",
+    "candidate_skill_sha256": "aba601a754e5a0e68bfbe637bf095dd66398028f93c2559bdafa1ce3d93e879b",
+    "cases": [
+      {
+        "case": 1,
+        "rewrite": "This function was added to replace an O(n²) iteration over all items. The source gives no details of its current implementation.",
+        "issue_notes": "Already clear. Preserves the intended replacement and the limit on implementation details.",
+        "input": "This function was added to replace an O(n²) iteration over all items. The source gives no details of its current implementation.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 2,
+        "rewrite": "The migration launched last week was designed to reduce latency. Measurements are still pending.",
+        "issue_notes": "Preserves the launch and intended benefit without implying a measured reduction.",
+        "input": "The migration was designed to reduce latency, and it was launched last week. Measurements are still pending.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 3,
+        "rewrite": "At matched variance, three recent records favor the skip. Four older records use unmatched variances and show mixed results.",
+        "issue_notes": "Preserves counts and variance conditions. The excerpt does not define “the skip”; no expansion was inferred.",
+        "input": "At matched variance, three recent records favor the skip. Four older records use unmatched variances and show mixed results.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 4,
+        "rewrite": "The new lookup replaced the previous search in June. Median latency fell from 12 ms to 8 ms on the stated test set.",
+        "issue_notes": "Already clear. Preserves the completed replacement and measured result without adding a causal claim.",
+        "input": "The new lookup replaced the previous search in June. Median latency fell from 12 ms to 8 ms on the stated test set.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 5,
+        "rewrite": "The library was intended to replace the parser, but it did not; the migration was abandoned.",
+        "issue_notes": "Retains the explicit distinction between intent and outcome.",
+        "input": "The library was intended to replace the parser. It did not replace it; the migration was abandoned.",
+        "manual_result": "pass"
+      }
+    ]
+  },
+  "pr_followup": {
+    "prompt_sha256": "b5772bada0c09f37e1366c935041c349fec6dbb4d96031b94cd23a7b46f37e98",
+    "output_sha256": "a6c920b61ad1f70d11332cbfac254c09c67dd0c8cc37f2cbf524829b319fe9d8",
+    "candidate_skill_sha256": "b8163c601b10aa29c0f837250541c76f52285705058aafc53eb6587dbcb95f1e",
+    "cases": [
+      {
+        "case": 1,
+        "rewrite": "The cache now expires after 60 seconds to limit stale entries.",
+        "issue_notes": "Removed the generic opening, staged question, and repeated statement.",
+        "input": "Release note: In today's fast-paced world, the cache now expires after 60 seconds. Why? Because this limits stale entries. The cache now expires after 60 seconds.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 2,
+        "rewrite": "I know this is hard. I can bring dinner tonight if you would like company.",
+        "issue_notes": "Kept the reassurance and offer unchanged to preserve warmth.",
+        "input": "Personal reply to a friend who just described bereavement; keep its warmth: I know this is hard. I can bring dinner tonight if you would like company.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 3,
+        "rewrite": "Why does the cache expire after 60 seconds? Because the policy limits stale entries.",
+        "issue_notes": "Kept the question-and-answer format appropriate to the FAQ.",
+        "input": "FAQ; preserve the question-and-answer format: Why does the cache expire after 60 seconds? Because the policy limits stale entries.",
+        "manual_result": "pass"
+      },
+      {
+        "case": 4,
+        "rewrite": "We should fix the import before releasing. I checked the export, and it retains empty rows.",
+        "issue_notes": "Removed the repeated shared context and made the export finding explicit.",
+        "input": "Engineering reply; the colleague already wrote that the import drops empty rows: As you said, the import drops empty rows. We should fix that before releasing. I checked the export and it retains them.",
+        "manual_result": "pass"
+      }
+    ]
+  }
+}

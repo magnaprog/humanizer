@@ -1,51 +1,50 @@
-# Voice techniques and worked examples
+# Voice and preservation examples
 
-Load this file when the rewrite is technically clean but reads as sterile, or when you need a full end-to-end example of the rewrite process.
+Read these examples when a rewrite loses useful detail or needs to match a supplied voice. They illustrate editorial decisions; they are not factual research or evidence of authorship.
 
-All techniques here obey the core rules: never invent a fact, name, number, date, quote, or citation. Personality comes from the writer's real views and details, not from fabricated specifics.
+## Keep the writer's reaction
 
-## How to add voice (when the genre calls for it)
+**Before:**
+> I was impressed by the demo, but I am not sure the results will hold on our data. I want to try it on last month's sample before choosing a tool.
 
-**Have opinions.** Don't just report facts; react to them when the writer's voice calls for it. "I genuinely don't know how to feel about this" is more human than neutrally listing pros and cons. An opinion is allowed; an invented factual claim is not.
+**After:**
+> The demo impressed me, but I want to try it on last month's sample before choosing a tool. I am not sure its results will hold on our data.
 
-**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up.
+The uncertainty, proposed sample, and decision remain. The rewrite adds no new experience or sentiment. In technical prose, first person may identify who made a judgment or performed an action; follow the document's conventions.
 
-**Acknowledge complexity.** Real humans have mixed feelings. "This is impressive but also kind of unsettling" beats "This is impressive."
+## Keep concrete details
 
-**Use "I" when it fits.** First person isn't unprofessional; it's honest. "I keep coming back to..." signals a real person thinking. Keep it out of reference, technical, and legal text.
+**Before:**
+> The detector was trained on eleven years of data. Evaluation used a held-out test era. Compared with several baselines, it showed a modest advantage.
 
-**Let some mess in.** Perfect structure feels algorithmic. Tangents, asides, and half-formed thoughts are human.
+**Too compressed:**
+> The detector outperformed several baselines.
 
-**Be specific about feelings.** Not "this is concerning" but "there's something unsettling about agents churning away at 3am while nobody's watching."
+**After:**
+> The detector was trained on eleven years of data and evaluated on a held-out test era. It showed a modest advantage over several baselines.
 
-## Before and after: clean but soulless vs. has a pulse
+The training duration, test separation, and magnitude qualification all matter. Shorter prose is useful only when those details survive.
 
-**Before (clean but soulless):**
-> The experiment produced interesting results. The agents generated 3 million lines of code. Some developers were impressed while others were skeptical. The implications remain unclear.
+## Do not add color by inventing facts
 
-**After (has a pulse):**
-> I genuinely don't know how to feel about this one. 3 million lines of code, generated while the humans presumably slept. Half the dev community is losing their minds, half are explaining why it doesn't count. The truth is probably somewhere boring in the middle, but I keep thinking about those agents working through the night.
+**Before:**
+> The agents generated 3 million lines of code. Some developers were impressed while others were skeptical. The implications remain unclear.
 
-Note that the After adds reactions and rhythm, not new facts. Every factual element (3 million lines, the split reactions, the unclear implications) was already in the Before.
+**After:**
+> The agents generated 3 million lines of code. Some developers were impressed, while others were skeptical. The implications remain unclear.
 
-## End-to-end example
+A light edit can be enough. The source gives no time of day, proportion of developers, or personal reaction from the writer. Do not add them to create a livelier story.
 
-**Source notes available to the editor:** the update adds batch processing, keyboard shortcuts, and offline mode; beta testers report faster task completion. The rewrite may use only these specifics.
+## Keep evidence limits outside promotional framing
 
-**Before (AI-sounding):**
-> The new software update serves as a testament to the company's commitment to innovation. Moreover, it provides a seamless, intuitive, and powerful user experience—ensuring that users can accomplish their goals efficiently. It's not just an update, it's a revolution in how we think about productivity. Industry experts believe this will have a lasting impact on the entire sector, highlighting the company's pivotal role in the evolving technological landscape.
+**Source notes:** The update adds batch processing, keyboard shortcuts, and offline mode. Beta testers report faster task completion.
 
-**After (humanized):**
-> The software update adds batch processing, keyboard shortcuts, and offline mode. Early feedback from beta testers has been positive, with most reporting faster task completion.
+**Draft:**
+> The update marks a revolution in productivity. It adds batch processing, keyboard shortcuts, and offline mode. Beta testers report faster task completion. Industry experts expect an impact across the sector.
 
-**Changes made:**
-- Removed "serves as a testament" (inflated symbolism, §1)
-- Removed "Moreover" (AI vocabulary, §7)
-- Removed "seamless, intuitive, and powerful" (rule of three + promotional, §4, §10)
-- Removed em dash and "-ensuring" phrase (superficial analysis, §3; dash rule, §14)
-- Removed "It's not just...it's..." (negative parallelism, §9)
-- Removed "Industry experts believe" (vague attribution, §5)
-- Removed "pivotal role" and "evolving landscape" (AI vocabulary, §7)
-- Replaced vague claims with the specific features and feedback from the source notes
+**Rewrite:**
+> The update adds batch processing, keyboard shortcuts, and offline mode. Beta testers report faster task completion. Industry experts expect an impact across the sector.
 
-If the source has no specifics, cut the vague claims and keep the rewrite factual. Never fill the gap with invented details.
+**Issue reported separately:** The supplied notes do not identify the industry experts or substantiate their prediction. Retain the attribution pending clarification, or correct it if the user authorizes factual revision and the evidence supports the correction.
+
+The empty revolutionary framing can go. The material prediction remains visible for review. Do not silently change "beta testers" to "most beta testers" or claim a measured speedup.

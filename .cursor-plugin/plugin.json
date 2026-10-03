@@ -1,11 +1,9 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "humanizer",
   "description": "Rewrite AI-sounding prose naturally while preserving its meaning and the writer's voice.",
   "version": "3.4.0",
   "author": {
-    "name": "blader",
-    "url": "https://github.com/blader"
+    "name": "blader"
   },
   "homepage": "https://github.com/magnaprog/humanizer",
   "repository": "https://github.com/magnaprog/humanizer",
@@ -16,8 +14,5 @@
     "humanize",
     "prose",
     "style"
-  ],
-  "skills": [
-    "./"
   ]
 }
