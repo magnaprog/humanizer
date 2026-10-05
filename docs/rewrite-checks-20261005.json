@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "version": "3.4.1",
+  "method": "Two independent automated rewrite exercises using the full skill and optional examples; main agent reviewed the outputs for meaning. Exercises had supplied text, no intended answers and no outside research.",
+  "limits": "Small qualitative checks, not a benchmark or authorship test. Five of six initial rewrites preserve the tested meaning; one transformation error led to a narrower instruction. Three follow-up cases preserve the tested distinctions. No live Claude/free-code rewrite comparison or broad accuracy claim.",
+  "initial_skill_sha256": "94101fd9efbb3b399e492db6bd803ab20bb8bba09544807d9fdf976567190b2f",
+  "final_skill_sha256": "f4fbbd52dd1e0aa70146b56b4ebbd570a17b27447ea5b0dcdb091889bc6d510f",
+  "initial": [
+    {
+      "request": "Paper with one author; no first person; preserve decisions and uncertainty.",
+      "input": "We chose the fourth record after examining results from the first three. We average three sampling streams within each fit, then calculate the median of same-seed differences. Our estimates remain uncertain.",
+      "case": 1,
+      "rewrite": "The fourth record was selected after the results from the first three had been examined. Within each fit, three sampling streams are averaged, then the median of same-seed differences is calculated. The estimates remain uncertain.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Preserves retrospective selection, three streams, aggregation order and uncertainty without first person."
+    },
+    {
+      "request": "Shorten with the same mathematical meaning.",
+      "input": "Define E=D-S. D changes by -4 units and S changes by -7 units, so E changes by +3 units. S has the larger absolute change.",
+      "case": 2,
+      "rewrite": "For E=D-S, ΔD=-4 units and ΔS=-7 units imply ΔE=+3 units; S has the larger absolute change.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Preserves all three signed changes and the absolute-magnitude comparison."
+    },
+    {
+      "request": "The author dislikes vague control, reference, joint, bound and fixed; change only when scientifically equivalent.",
+      "input": "The negative control contains no tracer. The reference voltage is 2.5 V. The joint distribution is p(x,z). Jensen's inequality supplies a lower bound on the expected log estimate. The sensor position stays fixed during each measurement.",
+      "case": 3,
+      "rewrite": "The negative control contains no tracer. The reference voltage is 2.5 V. The joint distribution is p(x,z). Jensen's inequality gives a lower bound on the expected log estimate. The sensor position remains unchanged during each measurement.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Retains the negative control, reference voltage, joint distribution and lower bound; sensor-position wording keeps the stated constant position."
+    },
+    {
+      "request": "Edit using only supplied evidence; preserve verification scope.",
+      "input": "The station page returned HTTP 404. An abstract and two paragraphs of the instrument paper were read. The cause of the spike remains unresolved.",
+      "case": 4,
+      "rewrite": "The station page returned HTTP 404. An abstract and two paragraphs of the instrument paper were read. The cause of the spike remains unresolved.",
+      "issues": [
+        "The cause of the spike remains unresolved."
+      ],
+      "review_result": "pass",
+      "assessment": "Retains exactly the stated source access, passage coverage and unresolved cause."
+    },
+    {
+      "request": "Improve vague display labels consistently without changing identifiers or math.",
+      "input": "Table heading: Centered. Figure caption: Centered scores subtract each window's own mean. Methods: Centered scores use P=I-11^T/T. Implementation key: `score_centered`. File: `centered.csv`.",
+      "case": 5,
+      "rewrite": "Table heading: Window mean subtraction. Figure caption: Window mean subtraction removes each window's own mean from its scores. Methods: Window mean subtraction uses P=I-11^T/T. Implementation key: `score_centered`. File: `centered.csv`.",
+      "issues": [],
+      "review_result": "fail",
+      "assessment": "Changes the object of subtraction to scores. The input is compressed, but it does not justify subtracting a window mean from a score. Do not accept this rewrite."
+    },
+    {
+      "request": "Personal note; preserve first person and the tentative opinion.",
+      "input": "I liked the smaller figures, but I want to print the draft before deciding. I have not checked whether the labels are readable on paper.",
+      "case": 6,
+      "rewrite": "I liked the smaller figures, but I want to print the draft before deciding. I haven't checked whether the labels are readable on paper.",
+      "issues": [
+        "Label readability on paper has not been checked."
+      ],
+      "review_result": "pass",
+      "assessment": "Preserves personal voice, tentative choice and the unperformed print/readability check."
+    }
+  ],
+  "followup": [
+    {
+      "request": "Improve vague display labels consistently without changing identifiers or math.",
+      "input": "Table heading: Centered. Figure caption: Centered scores subtract each window’s own mean. Methods: Centered scores use P=I-11^T/T. Implementation key: `score_centered`. File: `centered.csv`.",
+      "case": "A",
+      "rewrite": "Table heading: Within-window mean centering. Figure caption: Within-window mean centering subtracts each window’s own mean. Methods: Within-window mean centering uses P=I-11^T/T. Implementation key: `score_centered`. File: `centered.csv`.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Names the operation consistently without saying it subtracts a mean from scores. Original identifiers and formula remain."
+    },
+    {
+      "request": "Shorten while preserving the procedure.",
+      "input": "Predictions are divided by the training standard deviation before their squared distances to the standardized observations are calculated. The mean of those distances is the test score. Reference score is the table label for the linear baseline; reference voltage is the measured circuit potential.",
+      "case": "B",
+      "rewrite": "Predictions are divided by the training standard deviation, then their squared distances to the standardized observations are averaged to give the test score. “Reference score” labels the linear baseline in the table; reference voltage is the measured circuit potential.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Preserves normalization before squared-distance calculation and averaging; does not conflate the baseline score label with reference voltage."
+    },
+    {
+      "request": "No first person; preserve operations.",
+      "input": "We calculate the median of B-A separately within each year. Our pooled estimate is the median of those yearly medians; it is not the median over all individual differences. We kept the publication’s exact title and citation key `Bound2025`.",
+      "case": "C",
+      "rewrite": "The median of B-A is calculated separately for each year. The pooled estimate is the median of these yearly medians, not the median of all individual differences. The publication’s exact title and citation key `Bound2025` were retained.",
+      "issues": [],
+      "review_result": "pass",
+      "assessment": "Preserves the median of yearly medians, its distinction from a median over individual differences, lack of first person, publication title and citation key."
+    }
+  ],
+  "initial_output_sha256": "f25079452132bbeed2c953eeb6097bc3ad4fd53eb6557d0190a910eefeba8822",
+  "followup_output_sha256": "8104d5b21b3616d854eed68da0a2bd11d3fa2a512878b7af75e82bb123e731c9",
+  "followup_change": "For transformations, preserve which quantity is transformed and whether the operation precedes or follows scoring."
+}

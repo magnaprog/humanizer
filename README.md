@@ -43,6 +43,12 @@ For a manual installation, copy the skill directory with its supporting files, i
 
 On a free-code installation that uses `CLAUDE_CONFIG_DIR`, inspect that setting first. If its `skills/humanizer` is a symlink to Claude Code's skill, one update changes the shared target. Do not create another copy or replace that symlink without checking its purpose.
 
+Check enabled plugins as well as manual skill directories in each configured
+environment. An older `humanizer@humanizer` plugin can remain enabled after a
+manual skill update. Inspect its marketplace source and installed version with
+`claude plugin marketplace list` and `claude plugin list` under that environment's
+`CLAUDE_CONFIG_DIR`. Update both routes when both are in use.
+
 Before updating shared installations, preserve local modifications and coordinate with other writers. For an unmerged review branch, use the exact branch or commit named in the review instead of installing the current default branch. Reload skill discovery or start a fresh agent session after an update; existing conversations may retain previously loaded instructions.
 
 ## Usage
@@ -51,9 +57,14 @@ Call `/humanizer` with text, a file path, or a writing sample. You can also ask 
 
 The skill reads the source, drafts changes, checks every material claim and changed term, and reviews paragraph flow. A supplied writing sample controls voice when compatible with the task. It must not supply invented facts for the current passage.
 
+Author preferences govern pronouns, including a request for impersonal prose in
+a paper with one author. Scientific edits preserve signed values versus absolute
+magnitudes, aggregation order, and the definitions behind table and figure labels.
+An inaccessible source cannot establish the absence of an event or explanation.
+
 For pasted text, the default output contains a draft, a short review, and a final rewrite. File mode edits prose and reports issues separately. Embedded mode follows the parent task's output format. Code, inline commands, mathematical markup, labels, and source links remain intact unless the user authorized changes.
 
-A requested checklist can record each candidate and its disposition. Punctuation counts demonstrate review coverage, not correctness or authorship. Ordinary rewrites do not acquire mandatory symbol reports.
+A requested checklist can record each candidate and its disposition, the file version, and which passages were checked again after editing. Source records distinguish the passages actually read from broader claims of verification. Punctuation counts demonstrate review coverage, not correctness or authorship. Ordinary rewrites do not acquire mandatory symbol reports.
 
 ## The 26 patterns
 
@@ -112,7 +123,7 @@ These groups organize editorial checks. They do not rank measured detection stre
 
 ## Sources and verification
 
-The editorial list draws on [Wikipedia's Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) and upstream Humanizer. These sources describe patterns; they do not validate this fork's performance. The [voice examples](references/voice-examples.md) illustrate preservation of supplied details.
+The editorial list draws on [Wikipedia's Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) and upstream Humanizer. These sources describe patterns; they do not validate this fork's performance. The [voice examples](references/voice-examples.md) illustrate preservation of supplied details. The [scientific editing follow-up](docs/scientific-editing-20261005.md) records the 3.4.1 decisions and limited rewrite checks.
 
 Run the package checks with:
 
