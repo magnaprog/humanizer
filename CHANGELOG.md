@@ -6,6 +6,7 @@
 - Distinguish signed changes from absolute magnitudes, preserve aggregation order, and check renamed display labels against their definitions throughout the document.
 - Keep unavailable sources separate from evidence of absence. Requested review records identify source versions, passages read, and checks repeated after editing.
 - Retain the 26 patterns and the existing safeguards for technical language. Paper-specific word choices, colors, fonts and citation styles remain project decisions.
+- Check enabled plugin installations alongside manual skill directories, including each configured free-code environment.
 
 ## 3.4.0
 

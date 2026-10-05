@@ -43,6 +43,12 @@ For a manual installation, copy the skill directory with its supporting files, i
 
 On a free-code installation that uses `CLAUDE_CONFIG_DIR`, inspect that setting first. If its `skills/humanizer` is a symlink to Claude Code's skill, one update changes the shared target. Do not create another copy or replace that symlink without checking its purpose.
 
+Check enabled plugins as well as manual skill directories in each configured
+environment. An older `humanizer@humanizer` plugin can remain enabled after a
+manual skill update. Inspect its marketplace source and installed version with
+`claude plugin marketplace list` and `claude plugin list` under that environment's
+`CLAUDE_CONFIG_DIR`. Update both routes when both are in use.
+
 Before updating shared installations, preserve local modifications and coordinate with other writers. For an unmerged review branch, use the exact branch or commit named in the review instead of installing the current default branch. Reload skill discovery or start a fresh agent session after an update; existing conversations may retain previously loaded instructions.
 
 ## Usage

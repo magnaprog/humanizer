@@ -2,7 +2,7 @@
 
 Version 3.4.1 makes a few decisions from recent manuscript editing explicit.
 It follows fork commit `e2aeb87f17575e4fa4db90a8c428b84ed8a87a8e`.
-Both installed copies matched that revision before this review. Upstream main
+Both manual skill copies matched that revision before this review. Upstream main
 remained at `225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8`, and the heads of
 upstream PRs 304, 305, 307 and 308 matched the previous review. Their earlier
 [dispositions](upstream-review-20261003.md) therefore remain applicable.
@@ -45,3 +45,10 @@ pre-review snapshot. Preserve displaced directories and the installer metadata,
 and update only Humanizer's source record. Existing free-code and Grok links
 continue to use the Claude skill directory. Installation receipts are local
 machine records; the repository remains portable.
+
+Inspection also found an enabled free-code plugin at version 2.8.2 from
+`blader/humanizer`, alongside the current manual skill link. The previous
+installation check covered the manual copies and missed that plugin. The README
+now includes both installation routes. Claude's
+[plugin management documentation](https://code.claude.com/docs/en/discover-plugins)
+describes the separate marketplace, cache, installed version and enabled state.
