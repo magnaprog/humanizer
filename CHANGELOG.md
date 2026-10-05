@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.4.1
+
+- Follow document-specific pronoun preferences without prescribing I or we for every single-author paper. Add an impersonal rewrite example that preserves a retrospective data choice.
+- Distinguish signed changes from absolute magnitudes, preserve aggregation order, and check renamed display labels against their definitions throughout the document.
+- Keep unavailable sources separate from evidence of absence. Requested review records identify source versions, passages read, and checks repeated after editing.
+- Retain the 26 patterns and the existing safeguards for technical language. Paper-specific word choices, colors, fonts and citation styles remain project decisions.
+
 ## 3.4.0
 
 - Reconcile upstream `225a6f3` with the fork and the installed 3.3.0 safeguards. Adopt the 26-pattern organization, inline-code protection, shared-context check, and package maintenance improvements.

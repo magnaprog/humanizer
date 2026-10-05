@@ -10,7 +10,37 @@ Read these examples when a rewrite loses useful detail or needs to match a suppl
 **After:**
 > The demo impressed me, but I want to try it on last month's sample before choosing a tool. I am not sure its results will hold on our data.
 
-The uncertainty, proposed sample, and decision remain. The rewrite adds no new experience or sentiment. In technical prose, first person may identify who made a judgment or performed an action; follow the document's conventions.
+The uncertainty, proposed sample, and decision remain. The rewrite adds no new experience or sentiment. In technical prose, first person may identify who made a judgment or performed an action; follow the document's conventions and the author's preference.
+
+## A single author who excludes first person
+
+**Request:** Keep this paper impersonal; use neither I nor we.
+
+**Before:**
+> We evaluate three records. We chose the third record after inspecting the results from the first two. Our score subtracts each window's own mean before calculating distances.
+
+**After:**
+> The evaluation uses three records. The third record was chosen after inspection of the results from the first two. The score subtracts each window's own mean before calculating distances.
+
+The subjects name the evaluation and score. The passive sentence preserves the
+retrospective choice without inventing an independent selector. Replacing “we”
+with “I” would conflict with the request; repeating “this work” would add little.
+Other documents may appropriately use first person.
+
+## Keep the meaning of a numerical comparison
+
+**Source notes:** A score is D minus S. D decreases by 1 unit; S decreases by 3
+units. The score therefore increases by 2 units.
+
+**Ambiguous draft:**
+> The larger change in S makes the score rise.
+
+**After:**
+> The decrease in S exceeds the decrease in D in absolute magnitude, so the score rises by 2 units.
+
+The signed change of minus 3 is smaller than minus 1. Its absolute magnitude is
+larger. The rewrite states which comparison explains the subtraction; it does
+not change the score or its favorable direction.
 
 ## Keep concrete details
 
