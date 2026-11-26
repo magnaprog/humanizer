@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.8
+
+- In standalone methods, describe the current experiment and retain chronology that affects interpretation. Give actual evaluation counts and units when “budget” would imply only an allowance.
+
 ## 3.4.7
 
 - Check a requested terminology list against source and rendered exhibits. Preserve technical roles, units, and necessary qualifications.
