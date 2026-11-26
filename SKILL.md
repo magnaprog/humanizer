@@ -6,7 +6,7 @@ description: |
   residue. Preserve technical terms, evidence limits, and document requirements.
 license: MIT
 metadata:
-  version: "3.4.4"
+  version: "3.4.5"
 ---
 
 # Humanizer
@@ -44,7 +44,7 @@ For scientific, technical, legal, and other factual prose, preserve these distin
 - **Precision before style.** Check substitutions against available text, data, code, figures, and references. Keep the original when evidence does not settle a difference. Words such as reported, fitted, trained, robust, and associated can be exact technical descriptions; an `-ed` ending is not a reason to change them. For a disputed term, check its local definition or operation and, when needed, an authoritative domain passage. Check analogous uses consistently; record uncertainty instead of inventing an expansion or substituting a merely familiar word.
 - **Document constraints.** Follow the requested template, headings, caption conventions, citations, and typography. Preserve repeated qualifications where readers may encounter an abstract, caption, or conclusion independently. Read flagged dashes, brackets, negations and participles in context. Preserve mathematical grouping, arrows and ranges. Check that minus signs, multiplication signs, subscripts, exponents and units render as intended. Check whether a displayed zero is exact or rounded. Keep both distinct from an undefined metric or a missing observation.
 
-When reviewing exhibits, check the final figure or table at its intended size. Match the caption and legend to the marks readers can see, including overlaps and blank areas. Use plain color and shape names such as “open blue circles.” Keep names consistent across prose, artwork and any accompanying README when they denote the same quantity. Point readers to evidence available in their edition. In a README, verify paths and commands against the files readers receive.
+When reviewing exhibits, check the final figure or table at its intended size. Match the caption and legend to the marks readers can see, including overlaps and blank areas. Use plain color and shape names such as “open blue circles.” Keep names consistent across prose, artwork and any accompanying README when they denote the same quantity. Check which conditions the exhibit actually shows. If an omitted condition matters to the conclusion, narrow the claim or point to evidence readers can access in their edition. After changing a panel, reread the sentence that refers to it. In a README, verify paths and commands against the files readers receive.
 
 ### Voice
 
@@ -234,7 +234,7 @@ This is an editing example, not independent verification of the historical claim
 ### 17. Borrowed authority
 
 **Watch for:** experts argue, observers have cited, industry reports, some critics; prestige outlet lists or follower counts used instead of explaining a claim.
-**Check:** Name a source and what it said when available. Preserve material attributions and counts. Flag missing support or context separately instead of dropping inconvenient claims or choosing an arbitrary subset of a list.
+**Check:** Name a source and what it said when available. When a study motivates a method, identify the observation or comparison that carries over. Say where the analogy ends if the studies measure different quantities or operate at different scales. A study that changes two ingredients together can support a claim about their combined effect. Attributing that effect to either ingredient requires a separate comparison. Preserve material attributions and counts. Flag missing support or context separately instead of dropping inconvenient claims or choosing an arbitrary subset of a list.
 **Before:**
 > Her views have been cited in The New York Times, BBC, Financial Times, and The Hindu. She maintains an active social media presence with over 500,000 followers.
 **After:**
@@ -255,7 +255,7 @@ Follow the target format. Remove decoration that impedes reading, while preservi
 
 ### 19. Bold as decoration
 
-**Check:** Reduce unnecessary emphasis. Keep useful labels, required formatting, and first-use acronym expansions. Convert a list to prose only when readers can still distinguish its items.
+**Check:** Reduce unnecessary emphasis. Keep useful labels, required formatting, and first-use acronym expansions. In a results table, bold can encode a ranking. Check the eligible rows, metric and favorable direction. Explain a tie or an apparent tie from rounding when it affects the reading. Convert a list to prose only when readers can still distinguish its items.
 **Before:**
 > It combines **OKRs (Objectives and Key Results)** and **KPIs (Key Performance Indicators)**.
 **After:**

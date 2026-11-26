@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.5
+
+- Distinguish the part of a cited method that transfers from a claim that needs separate evidence, especially when a study changes several ingredients together.
+- Check which conditions a figure shows and what a highlighted table ranking compares, including ties at displayed precision.
+
 ## 3.4.4
 
 - Explain comparisons with enough quantitative evidence to judge them. Keep exceptions that change the conclusion.

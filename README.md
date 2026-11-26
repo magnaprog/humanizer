@@ -66,7 +66,7 @@ An inaccessible source cannot establish the absence of an event or explanation.
 
 For pasted text, the default output contains a draft, a short review, and a final rewrite. File mode edits prose and reports issues separately. Embedded mode follows the parent task's output format. Code, inline commands, mathematical markup, labels, and source links remain intact unless the user authorized changes. Dated audit records, released change notes, frozen/generated content, and template-owned text remain unchanged unless explicitly in scope, including in files with editable prose.
 
-For a results passage, the skill keeps the comparison and enough quantitative evidence to interpret it. A scientific document review also checks operational wording, the meaning of displayed zeroes and whether readers can follow captions, legends and accompanying instructions in their edition.
+For a results passage, the skill keeps the comparison and enough quantitative evidence to interpret it. A scientific document review also checks operational wording, the meaning of displayed zeroes and whether readers can follow captions, legends and accompanying instructions in their edition. The skill checks the scope of comparisons in figures, the meaning of bold rankings in tables, and which part of a cited study supports the present argument.
 
 A requested annotation review or checklist preserves original IDs, versions, locations, context, decisions, and links to the final passages. The user's color meanings control the review. Overlapping marks and historical versions stay traceable; failed extraction, unresolved meanings, inaccessible sources, and protected passages cannot silently become completed revisions. Reports distinguish inventories, semantic reading, visual inspection, inherited decisions, applied edits, and final checks. Counts demonstrate coverage, not writing quality or authorship. Ordinary rewrites do not acquire mandatory reports.
 
@@ -111,7 +111,7 @@ These groups organize editorial checks. They do not rank measured detection stre
 
 | # | Pattern | Check |
 |---|---------|-------|
-| 19 | **Bold as decoration** | Preserve useful structure and acronym expansions. |
+| 19 | **Bold as decoration** | Preserve useful structure, acronym expansions and meaningful table rankings. |
 | 20 | **Decorative headings** | Follow the document template and retain semantic notation. |
 | 21 | **Curly quotation marks** | Follow the target typography. |
 
