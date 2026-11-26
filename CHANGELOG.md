@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.9
+
+- Review quantitative passages against their exhibits and record section-level decisions when requested. Recheck numerical claims in the abstract for standalone interpretation.
+
 ## 3.4.8
 
 - In standalone methods, describe the current experiment and retain chronology that affects interpretation. Give actual evaluation counts and units when “budget” would imply only an allowance.
