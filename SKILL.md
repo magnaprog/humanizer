@@ -6,7 +6,7 @@ description: |
   residue. Preserve technical terms, evidence limits, and document requirements.
 license: MIT
 metadata:
-  version: "3.4.6"
+  version: "3.4.7"
 ---
 
 # Humanizer
@@ -22,7 +22,7 @@ Let the user's revision brief set the depth of change. When argument or document
 1. **Read in context.** Read the whole passage, the user's constraints, and any supplied writing sample. Identify repetition, vague wording, inflated framing, and gaps between sentences. Check paragraph structure as well as individual phrases.
 2. **Draft with the same meaning.** Keep every material claim, scene, example, and viewpoint. Preserve names, numbers, dates, citations, rankings, comparisons, and whether events happen together. Remove redundant or promotional framing only when it carries no distinct information. Do not invent facts, opinions, reactions, sources, actors, or mechanisms. Fiction may introduce details when the user asks for that.
 3. **Check the changes against the source.** Look for missing qualifications, changed quantities, unsupported additions, and substitutions that denote a different thing. Apply this check to third-party rewrites against the exact submitted source, including omissions and truncation; keep any required verbatim service output separate from your edited version. Check available evidence when a factual or technical change needs it. If a claim remains ambiguous or unsupported, preserve it and flag the issue separately; lack of evidence in the excerpt does not make the claim false. Make factual corrections only when the task includes them, and explain substantive corrections.
-4. **Read for flow.** Check that each sentence develops the argument and that the paragraph openings form a coherent sequence. Merge, split, or reorder when comprehension improves. Similar sentence lengths, standard scientific structure, and deliberate repetition can be effective. Do not manufacture irregularity or impose punctuation quotas.
+4. **Read for flow.** Check that each sentence develops the argument and that the paragraph openings form a coherent sequence. Merge, split, or reorder sentences when that improves comprehension. If two sentences read like separate facts, identify what connects them. One may give the observation that explains the other, or a condition that limits it. Use “therefore” or “thus” only for a supported inference, and follow the author’s preference for placement. Similar sentence lengths, standard scientific structure, and deliberate repetition can be effective. Do not manufacture irregularity or impose punctuation quotas.
 5. **Return the requested result.** Recheck changed terminology, scope, markup, and the final sentence. A complete rewrite must not lose its ending or weaken a limit. Follow the output mode below.
 
 ### Argument and document revision
@@ -40,11 +40,11 @@ For scientific, technical, legal, and other factual prose, preserve these distin
 - **Terms and notation.** Keep defined terminology, named systems and instruments, units, equations, labels, citation keys, code, and identifiers. Use a verified equivalent only when it denotes the same object and is clearer. A decoder, a generator, and a reconstruction are not interchangeable merely to avoid repetition. Preserve meaningful LaTeX and other markup.
 - **Numerical context.** Keep what a value measures, its denominator, population, aggregation, sign, favorable direction, uncertainty, and assumptions. Distinguish signed comparisons from comparisons of absolute magnitude, and preserve the order of aggregation. For transformations, preserve which quantity is transformed and whether the operation precedes or follows scoring. Do not regroup counts into an experimental design the source never states.
 - **Evidence and scope.** Preserve association versus causation, intended purpose versus completed outcome, exact results versus estimates, matched conditions versus separate fits, and descriptive ranges versus population uncertainty. Retain explicit negatives when they carry a real distinction. An assumption or inference must not become an observation through a wording change. When combining sentences, do not extend a condition to another result unless the source does.
-- **Definitions and roles.** Expand supplied acronyms where readers need them, including a standalone abstract. Explain unfamiliar terms without inventing expansions. Distinguish a baseline, control, example, and numerical check. When a modifier such as “matched” hides the rule, say what was matched, for example “samples of the same age.” Keep a precise term such as “paired measurements” when the pairing is clear. Use a checkpoint when saved state or selection matters; use the fitted model when discussing its distribution.
+- **Definitions and roles.** Expand supplied acronyms where readers need them, including a standalone abstract. Explain unfamiliar terms without inventing expansions. Name the comparator by its role. A baseline gives a point of comparison, a control isolates an effect, and a reference line may simply mark a target. When a modifier such as “matched” hides the rule, say what was matched, for example “samples of the same age.” Keep a precise term such as “paired measurements” when the pairing is clear. Use a checkpoint when saved state or selection matters; use the fitted model when discussing its distribution.
 - **Precision before style.** Check substitutions against available text, data, code, figures, and references. Keep the original when evidence does not settle a difference. Words such as reported, fitted, trained, robust, and associated can be exact technical descriptions; an `-ed` ending is not a reason to change them. For a disputed term, check its local definition or operation and, when needed, an authoritative domain passage. Check analogous uses consistently; record uncertainty instead of inventing an expansion or substituting a merely familiar word.
 - **Document constraints.** Follow the requested template, headings, caption conventions, citations, and typography. Preserve repeated qualifications where readers may encounter an abstract, caption, or conclusion independently. Read flagged dashes, brackets, negations and participles in context. Preserve mathematical grouping, arrows and ranges. Check that minus signs, multiplication signs, subscripts, exponents and units render as intended. Check whether a displayed zero is exact or rounded. Keep both distinct from an undefined metric or a missing observation.
 
-When reviewing exhibits, check the final figure or table at its intended size. Match the caption and legend to the marks readers can see, including overlaps and blank areas. Use plain color and shape names such as “open blue circles.” Keep names consistent across prose, artwork and any accompanying README when they denote the same quantity. Check which conditions the exhibit actually shows. If an omitted condition matters to the conclusion, narrow the claim or point to evidence readers can access in their edition. After changing a panel, reread the sentence that refers to it. In a README, verify paths and commands against the files readers receive.
+When reviewing exhibits, read the text inside each final figure and table at its intended size, including axes, panel titles, annotations, and column headers. Match the caption and legend to the marks readers can see, including overlaps and blank areas. Use plain color and shape names such as “open blue circles.” Keep names consistent across prose, artwork and any accompanying README when they denote the same quantity. Check which conditions the exhibit actually shows. If an omitted condition matters to the conclusion, narrow the claim or point to evidence readers can access in their edition. After changing a panel, reread the sentence that refers to it. In a README, verify paths and commands against the files readers receive.
 
 ### Voice
 
@@ -66,6 +66,8 @@ Check the author's applicable brief before treating the draft as a voice sample.
 
 When the user requests a checklist, annotation review, or inventory, preserve each item's identity, source version, original location and text, context, decision, and reason. Follow the user's annotation meanings; colors have no universal semantics. Link each decision to the resulting passage or explain retention, deletion, deferral, or a scope restriction. Recheck affected items after editing, including their surrounding argument. For overlapping annotations or multiple document versions, preserve every original ID and link shared issues to their current descendants. Failed extraction or an unmatched location needs investigation, not dismissal. Inaccessible sources, unresolved meanings, and protected passages are not completed revisions. Separate inventory coverage, passages semantically read, visual review, inherited decisions, applied edits, and final verification. A terminology lookup does not establish support for a claim; counts do not establish quality or authorship. Keep the ledger outside the deliverable unless requested. Ordinary rewrites do not need one.
 
+For a requested word-by-word audit, search the supplied list before and after editing. Include relevant inflections, open and hyphenated forms, and wording inside artwork. Check rendered matches against the source for line-break hyphens. Inspect the exhibit itself when text extraction misses labels. For each requested item, record absence, changes, or why the term earns its place. Apply an author’s watchlist to that brief.
+
 ## A. Staging instead of stating
 
 Check whether introductory contrasts, emphasis, and closers add a claim or simply repeat one.
@@ -73,7 +75,7 @@ Check whether introductory contrasts, emphasis, and closers add a claim or simpl
 ### 1. Not X but Y
 
 **Watch for:** not X but Y; not just, not only, or not merely X, but Y; it's not X, it's Y; X rather than Y; the same contrast split across sentences; clipped negative tails such as "no guessing."
-**Check:** Remove an empty contrast when the positive statement preserves the whole point. Keep both sides when they distinguish objects, outcomes, evidence, or real alternatives. Never strengthen a comparison into an absolute exclusion. If an actor is unclear, do not invent one.
+**Check:** Remove an empty contrast when the positive statement preserves the whole point. Keep both sides when they distinguish objects, outcomes, evidence, or real alternatives. For a recurring “cannot establish” or “remains unknown” ending, state the scope the evidence supports when that conveys the full limit. Preserve a consequential exclusion or an approved disclosure verbatim when required. Never strengthen a comparison into an absolute exclusion. If an actor is unclear, do not invent one.
 **Before:**
 > The pipeline returns a ranked list of causes, not a single answer.
 **After:**
@@ -133,7 +135,7 @@ Use the structure that makes the passage clear. Repetition and punctuation need 
 
 ### 6. Forced triads
 
-**Check:** Each item in a list should contribute something. Remove duplication, not a distinct item merely because a list has three parts. Preserve rankings and whether events happen simultaneously.
+**Check:** Each item in a list should contribute something. Remove duplication, not a distinct item merely because a list has three parts. Preserve rankings and whether events happen simultaneously. Follow the requested variety of English for spelling and the applicable house style for serial commas. A comma before “and” is a poor guide to dialect or authorship. If several sentences use lists where the items actually form a sequence or explanation, write that relationship.
 **Before:**
 > The event features keynote sessions, panel discussions, and networking opportunities.
 **After:**
@@ -166,7 +168,7 @@ Use the structure that makes the passage clear. Repetition and punctuation need 
 
 ### 10. Hyphenated pairs everywhere
 
-**Check:** Follow established spelling, grammar, and the target style. Compound modifiers often use a hyphen before a noun; some retain it elsewhere as part of their spelling. Preserve technical terms and names. Expand an unfamiliar coined compound only when the ordinary phrase has the same meaning. Do not ban grammatical `-ed` forms or replace them mechanically.
+**Check:** Follow established spelling, grammar, and the target style. Compound modifiers often use a hyphen before a noun; some retain it elsewhere as part of their spelling. Preserve technical terms and names. Unpack unfamiliar compounds when the ordinary phrase preserves their meaning. For example, “variance within each bin” identifies where the calculation takes place. Keep “two-state model” when the count modifies the noun. For a measurement, “a window lasting five minutes” is an alternative to “a five-minute window.” Preserve the unit and what it measures. Do not ban grammatical `-ed` forms or replace them mechanically.
 **Before:**
 > The report is high-quality and the process is well-documented.
 **After:**
@@ -263,7 +265,7 @@ Follow the target format. Remove decoration that impedes reading, while preservi
 
 ### 20. Decorative headings
 
-**Check:** Remove distracting emojis, arrows, horizontal rules, or theatrical headings when the genre does not need them. Preserve semantic arrows, necessary hierarchy, and template requirements. Use sentence case only when consistent with the document's style.
+**Check:** Remove distracting emojis, arrows, horizontal rules, or theatrical headings when the genre does not need them. Preserve semantic arrows, necessary hierarchy, and template requirements. Read each heading against the section it introduces. For “X and Y,” keep both when readers need to find two distinct topics. If the section instead explains how one quantity affects another, name that relationship. Use sentence case consistent with the document’s style.
 **Before:**
 > 🚀 **Launch:** The product launches in Q3. 💡 **Insight:** Users prefer simplicity.
 **After:**
@@ -318,7 +320,7 @@ Remove wrappers that do not belong in the deliverable. Keep actual correspondenc
 ### 25. Writing about the document instead of its subject
 
 **Watch for:** irrelevant drafting history; descriptions of a table's visible layout; narration of routine editing steps.
-**Check:** Describe current behavior when the source states it. Keep history in change documents, reproducibility methods, source credits, and conventions a reader cannot infer. Never invent a new implementation or missing-data count when removing meta-narration.
+**Check:** Describe current behavior when the source states it. Keep history in change documents, reproducibility methods, source credits, and conventions a reader cannot infer. In methods prose, a data release, retrieval date, or processing step can identify what was analyzed. Cut routine download narration when it supplies none of that information. Never invent a new implementation or missing-data count when removing meta-narration.
 **Before:**
 > This function was added to replace the previous approach of iterating through all items, which caused O(n²) performance.
 **After:**

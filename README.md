@@ -70,6 +70,8 @@ For a results passage, the skill keeps the comparison and enough quantitative ev
 
 A requested annotation review or checklist preserves original IDs, versions, locations, context, decisions, and links to the final passages. The user's color meanings control the review. Overlapping marks and historical versions stay traceable; failed extraction, unresolved meanings, inaccessible sources, and protected passages cannot silently become completed revisions. Reports distinguish inventories, semantic reading, visual inspection, inherited decisions, applied edits, and final checks. Counts demonstrate coverage, not writing quality or authorship. Ordinary rewrites do not acquire mandatory reports.
 
+On request, Humanizer searches a wording list before and after editing, including variant spellings and text inside exhibits. It checks headings against their sections, uses the requested variety of English, and distinguishes a useful compound or serial list from wording that hides a relationship.
+
 ## The 26 patterns
 
 These groups organize editorial checks. They do not rank measured detection strength. Keep a phrase that communicates the intended meaning well, and preserve required notation, supplied voice, and format conventions.

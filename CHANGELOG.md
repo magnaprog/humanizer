@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.7
+
+- Check a requested terminology list against source and rendered exhibits. Preserve technical roles, units, and necessary qualifications.
+- Review compound headings, serial lists, and sentence connections against the author’s brief and the argument.
+
 ## 3.4.6
 
 - Resolve voice against the author’s applicable brief before following the draft as a sample. Recheck the requested scope, including captions, and distinguish authorial pronouns from symbols and names.
