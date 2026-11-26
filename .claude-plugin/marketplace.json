@@ -1,11 +1,9 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "humanizer",
   "owner": {
     "name": "magnaprog",
     "url": "https://github.com/magnaprog"
   },
-  "description": "Install Humanizer as a Claude plugin.",
   "plugins": [
     {
       "name": "humanizer",

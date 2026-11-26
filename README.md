@@ -55,16 +55,20 @@ Before updating shared installations, preserve local modifications and coordinat
 
 Call `/humanizer` with text, a file path, or a writing sample. You can also ask in ordinary language: "Humanize the prose in docs/launch-post.md."
 
-The skill reads the source, drafts changes, checks every material claim and changed term, and reviews paragraph flow. A supplied writing sample controls voice when compatible with the task. It must not supply invented facts for the current passage.
+The skill reads the source, drafts changes, checks every material claim and changed term, and reviews paragraph flow. Check third-party rewrites against the exact submitted source for changed claims, omissions, and truncation; keep any required verbatim service output separate from edited prose. A supplied writing sample controls voice when compatible with the task. It must not supply invented facts for the current passage.
+
+The user's brief sets the depth of revision. An authorized argument or document rewrite can rebuild the outline and paragraph roles while preserving evidence, scientific meaning, and material qualifications. The skill checks the whole document at the requested scope, including dependencies, captions, similar passages, and cross-references. It explains supported reasoning without inventing research motives or review by human experts. Cross-project examples supply editorial lessons, with proposed changes, adopted revisions, and later corrections kept distinct.
 
 Author preferences govern pronouns, including a request for impersonal prose in
 a paper with one author. Scientific edits preserve signed values versus absolute
 magnitudes, aggregation order, and the definitions behind table and figure labels.
 An inaccessible source cannot establish the absence of an event or explanation.
 
-For pasted text, the default output contains a draft, a short review, and a final rewrite. File mode edits prose and reports issues separately. Embedded mode follows the parent task's output format. Code, inline commands, mathematical markup, labels, and source links remain intact unless the user authorized changes.
+For pasted text, the default output contains a draft, a short review, and a final rewrite. File mode edits prose and reports issues separately. Embedded mode follows the parent task's output format. Code, inline commands, mathematical markup, labels, and source links remain intact unless the user authorized changes. Dated audit records, released change notes, frozen/generated content, and template-owned text remain unchanged unless explicitly in scope, including in files with editable prose.
 
-A requested checklist can record each candidate and its disposition, the file version, and which passages were checked again after editing. Source records distinguish the passages actually read from broader claims of verification. Punctuation counts demonstrate review coverage, not correctness or authorship. Ordinary rewrites do not acquire mandatory symbol reports.
+For a results passage, the skill keeps the comparison and enough quantitative evidence to interpret it. A scientific document review also checks operational wording, the meaning of displayed zeroes and whether readers can follow captions, legends and accompanying instructions in their edition.
+
+A requested annotation review or checklist preserves original IDs, versions, locations, context, decisions, and links to the final passages. The user's color meanings control the review. Overlapping marks and historical versions stay traceable; failed extraction, unresolved meanings, inaccessible sources, and protected passages cannot silently become completed revisions. Reports distinguish inventories, semantic reading, visual inspection, inherited decisions, applied edits, and final checks. Counts demonstrate coverage, not writing quality or authorship. Ordinary rewrites do not acquire mandatory reports.
 
 ## The 26 patterns
 

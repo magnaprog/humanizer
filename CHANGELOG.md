@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.4.4
+
+- Explain comparisons with enough quantitative evidence to judge them. Keep exceptions that change the conclusion.
+- Check ambiguous modifiers, scientific notation and displayed zeroes in context. Read captions, legends and accompanying instructions against the materials readers receive.
+
+## 3.4.3
+
+- Let an authorized argument or document rewrite rebuild the outline and paragraph roles while preserving evidence and material qualifications. Check whole-document flow and avoid invented research motives or human review.
+- Learn editorial principles from actual cross-project revisions without importing their science or treating an improved draft as proof of a prompt's effect.
+- Track annotated passages across versions and distinguish inventories, semantic reading, visual inspection, edits, and final verification. Keep protected, unmapped, and unresolved items visible.
+- Verify disputed terminology against its local operation and appropriate domain evidence. Retain contextual judgment and all 26 existing patterns.
+
+## 3.4.2
+
+- Check third-party rewrites against the exact submitted source for changed claims, omissions, and truncation. Keep required verbatim service output separate from edited prose.
+- Protect dated audit records, released change notes, frozen/generated content, and template-owned text unless explicitly in scope, including within mixed documents.
+- Omit optional Claude manifest fields rejected by free-code's validator while preserving plugin routing and per-plugin descriptions.
+
 ## 3.4.1
 
 - Follow document-specific pronoun preferences without prescribing I or we for every single-author paper. Add an impersonal rewrite example that preserves a retrospective data choice.
