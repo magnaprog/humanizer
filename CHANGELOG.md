@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.4.6
+
+- Resolve voice against the author’s applicable brief before following the draft as a sample. Recheck the requested scope, including captions, and distinguish authorial pronouns from symbols and names.
+
 ## 3.4.5
 
 - Distinguish the part of a cited method that transfers from a claim that needs separate evidence, especially when a study changes several ingredients together.

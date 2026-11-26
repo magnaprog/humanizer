@@ -6,7 +6,7 @@ description: |
   residue. Preserve technical terms, evidence limits, and document requirements.
 license: MIT
 metadata:
-  version: "3.4.5"
+  version: "3.4.6"
 ---
 
 # Humanizer
@@ -54,7 +54,7 @@ When asked to learn from other projects, compare actual before/after examples fo
 
 Keep the writer's supplied opinions, uncertainty, humor, and asides when the genre calls for them. Do not invent a feeling or experience to add personality. Reference prose stays neutral; first person can remain when the source and genre use it. See [voice examples](references/voice-examples.md) when a rewrite needs more attention to voice or detail.
 
-Follow the author's requested pronouns. A single author does not by itself require I or we. If first person is excluded, use the method, data, calculation or finding as the subject when accurate, or use a necessary passive. Avoid replacing every pronoun with “this work”.
+Check the author's applicable brief before treating the draft as a voice sample. If the brief specifies pronouns, follow it even when the draft uses a different voice. Read the final prose, captions and supplement for exceptions. A pronoun search can also match a method name, a quoted title or a mathematical symbol. A single author does not by itself require I or we. If first person is excluded, use the method, data, calculation or finding as the subject when accurate, or use a necessary passive. Avoid replacing every pronoun with “this work”.
 
 ### What to return
 

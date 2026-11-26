@@ -1,7 +1,7 @@
 {
   "name": "humanizer",
   "description": "Rewrite AI-sounding prose naturally while preserving its meaning and the writer's voice.",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "author": {
     "name": "blader"
   },
